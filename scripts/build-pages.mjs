@@ -1,0 +1,20 @@
+import {readFile,writeFile,cp,mkdir} from 'node:fs/promises';
+import {resolve} from 'node:path';
+const output=resolve(process.argv[2]||'out/pages');
+if(output===resolve('public')||output===resolve('.'))throw new Error('Choose a separate output directory.');
+await mkdir(output,{recursive:true});
+await cp('public',output,{recursive:true});
+// Reuse the tested provider payload and dictionary validation; no credentials in this bundle.
+let core=(await readFile('server/deepseek.mjs','utf8')).split('const recentRequests=new Map();')[0];
+core=core.replace("import { pinyin, polyphonic } from 'pinyin-pro';","const {pinyin,polyphonic}=window.pinyinPro;").replaceAll('export ','');
+const client=`(()=>{\n${core}\nwindow.PinyinPagesRecognition=async(images,key)=>recognizeImage(images,{DEEPSEEK_API_KEY:key,DEEPSEEK_MODEL:'deepseek-flash'});\n})();\n`;
+await writeFile(resolve(output,'pages-recognition.js'),client);
+let html=await readFile(resolve(output,'index.html'),'utf8');
+html=html.replace('<script src="app.js?', '<script src="pages-recognition.js?v=20261029-pages" defer></script><script src="app.js?');
+html=html.replaceAll('20261029-key-local-notice','20261029-pages');
+html=html.replaceAll('识别时仅经本站后端临时转发给 DeepSeek，不写入本站数据库或应用日志。','GitHub Pages 版由浏览器直接连接 DeepSeek，密钥不经过本站后端。');
+html=html.replaceAll('识别时经过本站后端临时调用 DeepSeek，不写入本站数据库或应用日志。','GitHub Pages 版由浏览器直接调用 DeepSeek，密钥不经过本站后端。');
+html=html.replaceAll('识别时，密钥与照片会经本站后端发送给 DeepSeek；本站后端仅临时使用密钥，不写入数据库或应用日志。','识别时，密钥与照片由当前浏览器直接发送给 DeepSeek 官方接口，不经过本站后端。');
+await writeFile(resolve(output,'index.html'),html);
+await writeFile(resolve(output,'.nojekyll'),'');
+console.log(output);

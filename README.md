@@ -6,9 +6,9 @@
 
 拼音小老师是一款为孩子和家长设计的**拼音作业辅助工具**。它把老师发来的纸质作业或作业图片，转成可以点击、听读和反复练习的卡片，让家长少一些逐字示范的疲惫，让孩子多一点愿意继续读下去的兴趣。
 
-[GitHub 项目主页](https://github.com/sameordiff/pinyin-little-teacher) · [打开网页版](https://pinyin-little-teacher-1026.moviesongj.chatgpt.site/) · [音频与字体来源](public/credits.html) · [本机运行](#本机运行)
+[GitHub 项目主页](https://github.com/sameordiff/pinyin-little-teacher) · [打开网页版](https://sameordiff.github.io/pinyin-little-teacher/) · [音频与字体来源](public/credits.html) · [本机运行](#本机运行)
 
-> GitHub 源码仓库已公开，可直接查看代码和使用说明。托管网页版的访问权限独立，当前可能需要登录 ChatGPT 并获得访问授权；也可以下载源码，在自己的电脑上运行。
+> 网页版已发布到 GitHub Pages，可直接打开使用，无需登录 ChatGPT。拍照识字需要填写自己的 DeepSeek API Key；也可以下载源码在本机运行。
 
 ## 为什么做这个小工具
 
@@ -86,7 +86,7 @@ zhé zhǐ | 折纸
 - 勾选“保存在当前浏览器”：下次打开可自动读取。
 - 不勾选：只在当前页面使用，刷新或关闭后需要重新填写。
 - 可以在“家长设置”中更换或删除密钥；换设备、换浏览器或清除网站数据后需要重填。
-- 拍照识别时，密钥与照片会经过本站后端临时发送给 DeepSeek；应用不会将密钥写入数据库或日志，也不会回退使用站主的密钥。
+- GitHub Pages 版拍照识别时，由浏览器直接将密钥与照片发送给 DeepSeek 官方接口，密钥不经过本站后端。自行部署的服务端版本则会临时转发；两种方式都不会回退使用站主密钥。
 - 浏览器本地保存不是加密保险箱，共用设备建议选择仅本次使用。
 
 照片不由本应用持久保存，识别时会交给 DeepSeek 处理。家长确认的练习内容、收藏和学习记录保存在当前浏览器；孩子的录音仅在本机回放，不上传用于评分。
@@ -132,7 +132,7 @@ node scripts/dev-standalone.mjs
 
 然后打开 **http://127.0.0.1:8769**。DeepSeek 密钥在网页中填写，无需把真实密钥写进源码或终端命令。停止本机服务时按 `Ctrl+C`。
 
-框架开发可使用 `npm run dev`，构建使用 `npm run build`。服务端接口必须部署在支持的运行环境中；仅把静态文件放到 GitHub Pages，不能运行拍照识别接口。原托管项目的标识保留在 `.openai/hosting.json` 中，迁移到新站点时需使用自己的部署配置。
+框架开发可使用 `npm run dev`，构建使用 `npm run build`。GitHub Pages 通过 `node scripts/build-pages.mjs` 生成静态版，拍照识别由浏览器直连 DeepSeek 官方接口，无需部署本站后端。服务端版本仍通过自己的 `/api/recognize` 调用。原托管项目的标识保留在 `.openai/hosting.json` 中，迁移到新站点时需使用自己的部署配置。
 
 ## 项目结构
 
@@ -158,3 +158,7 @@ node scripts/dev-standalone.mjs
 ---
 
 **把反复示范交给工具，把耐心和鼓励留给孩子。**
+
+## GitHub Pages 发布
+
+访问 **https://sameordiff.github.io/pinyin-little-teacher/**。静态文件由 `scripts/build-pages.mjs` 生成，发布在 `gh-pages` 分支；仓库 Pages 设置使用该分支的根目录。修改 `main` 后需重新生成并推送发布分支。网站文件中不包含用户密钥。
