@@ -6,9 +6,9 @@
 
 拼音小老师是一款为孩子和家长设计的**拼音作业辅助工具**。它把老师发来的纸质作业或作业图片，转成可以点击、听读和反复练习的卡片，让家长少一些逐字示范的疲惫，让孩子多一点愿意继续读下去的兴趣。
 
-[打开网页版](https://pinyin-little-teacher-1026.moviesongj.chatgpt.site/) · [音频与字体来源](public/credits.html) · [本机运行](#本机运行)
+[GitHub 项目主页](https://github.com/sameordiff/pinyin-little-teacher) · [打开网页版](https://pinyin-little-teacher-1026.moviesongj.chatgpt.site/) · [音频与字体来源](public/credits.html) · [本机运行](#本机运行)
 
-> 当前托管版本保留私有访问权限，可能需要登录 ChatGPT 并获得访问授权。也可以下载源码，在自己的电脑上运行。
+> GitHub 源码仓库已公开，可直接查看代码和使用说明。托管网页版的访问权限独立，当前可能需要登录 ChatGPT 并获得访问授权；也可以下载源码，在自己的电脑上运行。
 
 ## 为什么做这个小工具
 
@@ -122,7 +122,7 @@ npm ci
 node scripts/dev-standalone.mjs
 ```
 
-仓库目前为私有，克隆时需要具备访问权限的 GitHub 账号；也可以从仓库下载 ZIP 后解压运行。
+仓库为公开项目，可直接克隆；也可以从 GitHub 的 Code 菜单下载 ZIP 后解压运行。
 
 终端显示 `Ready for local server credentials on hidden stdin.` 后，输入下面这一行并按回车：
 
