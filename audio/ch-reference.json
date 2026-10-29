@@ -1,0 +1,17 @@
+{
+  "source_page": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/html_ch/index.html",
+  "source_audio": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/html_ch/audio/F16.WAV",
+  "licensing_page": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/",
+  "license": "CC-BY-4.0",
+  "copyright": "Ministry of Education, R.O.C. (Taiwan), 2017",
+  "source_label": "HTML row s16, ㄔ; Hanyu Pinyin ch; ㄔ without a tone mark corresponds to chī in syllable notation.",
+  "files": [
+    "ch-callout-reference.mp3",
+    "chi1-reference.mp3"
+  ],
+  "changes": "Whole source recording preserved, no consonant or vowel cuts. MP3 conversion and loudness normalization. The ch teaching call-out is played at 1.15x with pitch preservation and volume 0.9; the full chī/吃 plays at normal speed.",
+  "sha256": {
+    "ch-callout-reference.mp3": "a6f6314073ffc13c910f3bd54b35039724c7a3c27482d3a293dd2dc035049e5b",
+    "chi1-reference.mp3": "a6f6314073ffc13c910f3bd54b35039724c7a3c27482d3a293dd2dc035049e5b"
+  }
+}
