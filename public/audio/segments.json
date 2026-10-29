@@ -1,0 +1,59 @@
+{
+  "source": "https://github.com/hugolpz/audio-cmn",
+  "authors": [
+    "Chen Wang 王琛",
+    "Hugo Lopez",
+    "Nicolas Vion"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "changes": "Cropped consonant and syllabic retroflex vowel portions; short edge fades and silence padding; no pitch alteration. These are component listening clips, not new teacher recordings.",
+  "segments": [
+    {
+      "file": "zh-initial.mp3",
+      "source_file": "zhi1.mp3",
+      "start_seconds": 0.28,
+      "end_seconds": 0.44
+    },
+    {
+      "file": "zhi-vowel1.mp3",
+      "source_file": "zhi1.mp3",
+      "start_seconds": 0.38,
+      "end_seconds": 0.78
+    },
+    {
+      "file": "zhi-vowel2.mp3",
+      "source_file": "zhi2.mp3",
+      "start_seconds": 0.4,
+      "end_seconds": 0.75
+    },
+    {
+      "file": "zhi-vowel3.mp3",
+      "source_file": "zhi3.mp3",
+      "start_seconds": 0.37,
+      "end_seconds": 1.03
+    },
+    {
+      "file": "zhi-vowel4.mp3",
+      "source_file": "zhi4.mp3",
+      "start_seconds": 0.4,
+      "end_seconds": 0.65
+    },
+    {
+      "file": "ch-initial.mp3",
+      "source_file": "chi1.mp3",
+      "start_seconds": 0.287,
+      "end_seconds": 0.344,
+      "gain_db": 6.02,
+      "changes": "Consonant release/frication and aspiration only; ends before periodic vowel onset at about 0.345 seconds. Edge fades and 60ms/180ms silence padding; no pitch alteration."
+    },
+    {
+      "file": "ch-initial-clear.mp3",
+      "source_file": "chi2.mp3",
+      "start_seconds": 0.275,
+      "end_seconds": 0.482,
+      "gain_db": 0.83,
+      "changes": "Longer natural voiceless ch release/frication and aspiration; vowel onset ~0.485s excluded. Edge fades, 40ms leading and 200ms trailing silence, no time stretching or pitch alteration. Replaces the inaudibly brief ch-initial clip in teaching."
+    }
+  ]
+}

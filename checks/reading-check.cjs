@@ -1,0 +1,13 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const sandbox={window:{pinyinPro:require('./dictionary.cjs')},document:{getElementById:()=>null},setTimeout,clearTimeout};sandbox.pinyinPro=sandbox.window.pinyinPro;vm.createContext(sandbox);vm.runInContext(fs.readFileSync('public/audio-index.js','utf8'),sandbox);vm.runInContext(fs.readFileSync('public/app.js','utf8').split('function readStorage')[0]+';globalThis.engine={assessmentCriteria,evaluateReading,readingState};',sandbox);const e=sandbox.engine,ids=p=>Array.from(e.assessmentCriteria(p),x=>x.id);
+assert.deepEqual(ids('shù'),['initial','final','tone']);assert.deepEqual(ids('zhī'),['whole','tone']);assert.deepEqual(ids('zi'),['neutral']);assert.deepEqual(ids('ǎ'),['final','tone']);
+const correct=[{initial:true,final:true,tone:true},{whole:true,tone:true}];assert.equal(e.evaluateReading('shù zhī',correct,true,true).passed,true);
+assert.equal(e.evaluateReading('shù zhī',correct,true,false).passed,false);
+assert.equal(e.evaluateReading('shù zhī',correct,false,true).passed,false);
+assert.equal(e.evaluateReading('shù zhī',[correct[0],{whole:true,tone:false}],true,true).passed,false);
+assert(e.evaluateReading('shù zhī',[],true,true).missing.length>0);
+assert.equal(e.evaluateReading('zhī',[{whole:true,tone:true}],false,true).passed,true);
+assert.equal(e.evaluateReading('shuā zi',[{initial:true,final:true,tone:true},{neutral:true}],true,true).passed,true);
+const partial=e.evaluateReading('shù zhī',[correct[0],{whole:true,tone:false}],true,true);assert.equal(partial.score,83);assert.equal(partial.earned,5);assert.equal(partial.total,6);assert.equal(e.evaluateReading('shù zhī',correct,true,false).score,null);assert.equal(e.readingState(true,null),'heard');assert.equal(e.readingState(false,{independent:true,passed:true}),'passed');assert.equal(e.readingState(true,{independent:true,passed:false}),'practice');
+assert.equal(e.readingState(false,null,'read'),'read');assert.equal(e.readingState(true,{independent:true,passed:true},'unknown'),'unknown');
+console.log('PASS: checks require independent reading, every syllable, tones, contextual neutral tone and word joining; whole syllables have a separate rubric.');

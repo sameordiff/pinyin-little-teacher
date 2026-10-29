@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import { test } from 'node:test';
+import { normalizeRecognition,normalizePinyin,makePayload,handleRecognition } from '../server/deepseek.mjs';
+const jpeg='data:image/jpeg;base64,/9j/2Q==';
+test('preserves tones, separates literal characters from inferred examples, flags mismatches',()=>{
+ const r=normalizeRecognition({items:[{pinyin:'shu4 zhi1',hanzi:'树枝',source:'inferred'},{pinyin:'píng guǒ',hanzi:'苹果',original_text:'苹果',source:'image'},{pinyin:'zhǐ shi',hanzi:'指示',source:'inferred'},{pinyin:'māo',hanzi:'树'}]});
+ assert.equal(r.items[0].pinyin,'shù zhī');assert.equal(r.items[0].source,'inferred');assert.equal(r.items[1].source,'image');assert.equal(normalizeRecognition({items:[{pinyin:'zhù',hanzi:'住',original_text:'zhù',source:'image'}]}).items[0].source,'inferred');assert(r.items[2].uncertain);assert(r.items[3].uncertain);
+});
+test('ignores malformed text and merges duplicate homophones for review',()=>{
+ const r=normalizeRecognition({items:[null,{pinyin:'<script>',hanzi:'危险'},{pinyin:'shù',hanzi:'树',source:'image'},{pinyin:'shù',hanzi:'数',source:'image'}]});assert.equal(r.items.length,1);assert.deepEqual(r.items[0].alternatives,['数']);assert(r.items[0].uncertain);assert.throws(()=>normalizeRecognition({items:[]}));assert.equal(normalizePinyin('lv4'),'lǜ');
+});
+test('uses official image content blocks and no client supplied endpoint',()=>{const p=makePayload([jpeg,jpeg]);assert.equal(p.model,'deepseek-flash');assert.equal(p.messages[1].content.filter(x=>x.type==='image_url').length,2);assert.throws(()=>makePayload('https://evil.example/x'));assert.throws(()=>makePayload([jpeg,jpeg,jpeg,jpeg]));});
+test('rejects cross-origin, oversized and malformed requests before upstream',async()=>{let calls=0;const f=()=>{calls++;throw Error('should not call');};const env={DEEPSEEK_API_KEY:'test-key'};let r=await handleRecognition(new Request('https://private.example/api/recognize',{method:'POST',headers:{Origin:'https://evil.example','Content-Type':'application/json'},body:JSON.stringify({image:jpeg})}),env,f);assert.equal(r.status,403);r=await handleRecognition(new Request('https://private.example/api/recognize',{method:'POST',headers:{'Content-Type':'application/json'},body:'bad'}),env,f);assert.equal(r.status,400);assert.equal(calls,0);});
+test('successful server request keeps authorization upstream only and redacts failures',async()=>{const env={DEEPSEEK_API_KEY:'sk-test-secret-that-must-not-leak'};const request=()=>new Request('https://private.example/api/recognize',{method:'POST',headers:{Origin:'https://private.example','Content-Type':'application/json'},body:JSON.stringify({image:jpeg,apiKey:env.DEEPSEEK_API_KEY})});const r=await handleRecognition(request(),env,async(url,options)=>{assert.equal(url,'https://api.deepseek.com/chat/completions');assert.equal(options.headers.Authorization,'Bearer '+env.DEEPSEEK_API_KEY);return Response.json({choices:[{message:{content:JSON.stringify({items:[{pinyin:'shù zhī',hanzi:'树枝'}]})}}]});});assert.equal(r.status,200);assert(!(await r.text()).includes(env.DEEPSEEK_API_KEY));const fail=await handleRecognition(request(),env,async()=>new Response('secret provider details',{status:401}));assert.equal(fail.status,401);assert(!(await fail.text()).includes('secret provider details'));const health=await handleRecognition(new Request('https://private.example/api/recognize'),env);assert(!(await health.text()).includes(env.DEEPSEEK_API_KEY));});
+
+test('requires caller key even when host key exists, rejects malformed keys without upstream calls',async()=>{
+ let calls=0;const fetcher=()=>{calls++;throw Error('must not call');};const env={DEEPSEEK_API_KEY:'sk-host-key-must-never-be-used'};
+ for(const [payload,status]of [[{image:jpeg},401],[{image:jpeg,apiKey:'bad'},400],[null,400]]){
+ const r=await handleRecognition(new Request('https://private.example/api/recognize',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}),env,fetcher);assert.equal(r.status,status);assert(!(await r.text()).includes(env.DEEPSEEK_API_KEY));}assert.equal(calls,0);
+});
+test('isolates simultaneous users keys and does not leak upstream responses',async()=>{
+ const keys=['sk-dummy-user-one-1234567890','sk-dummy-user-two-1234567890'];const calls=[];
+ const output=await Promise.all(keys.map(apiKey=>handleRecognition(new Request('https://private.example/api/recognize',{method:'POST',headers:{'Content-Type':'application/json','oai-authenticated-user-id':apiKey.slice(-8)},body:JSON.stringify({image:jpeg,apiKey})}),{DEEPSEEK_API_KEY:'sk-host-must-not-be-used'},async(url,options)=>{calls.push(options.headers.Authorization);await new Promise(resolve=>setTimeout(resolve,5));return Response.json({choices:[{message:{content:JSON.stringify({items:[{pinyin:'chī',hanzi:'吃'}]})}}]});})));
+ assert.deepEqual(calls.sort(),keys.map(k=>'Bearer '+k).sort());for(const r of output){assert.equal(r.status,200);const body=await r.text();for(const key of keys)assert(!body.includes(key));}
+});

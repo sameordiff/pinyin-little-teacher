@@ -1,0 +1,929 @@
+{
+  "method": "Dictionary polyphonic reading validation, source recording metadata and shared audio identity checks. This is not a teacher listening audit or automatic speech-quality certification.",
+  "reference": "ch-reference.json",
+  "entries": [
+    {
+      "pinyin": "chè",
+      "hanzi": "撤",
+      "audio": "che4.mp3",
+      "curated": true,
+      "defaultReading": "chè",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chà",
+      "hanzi": "岔",
+      "audio": "cha4.mp3",
+      "curated": true,
+      "defaultReading": "chà",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chú",
+      "hanzi": "除",
+      "audio": "chu2.mp3",
+      "curated": true,
+      "defaultReading": "chú",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuō",
+      "hanzi": "戳",
+      "audio": "chuo1.mp3",
+      "curated": true,
+      "defaultReading": "chuō",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chī",
+      "hanzi": "吃",
+      "audio": "chi1-reference.mp3",
+      "curated": true,
+      "defaultReading": "chī",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chí",
+      "hanzi": "迟",
+      "audio": "chi2.mp3",
+      "curated": true,
+      "defaultReading": "chí",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chā",
+      "hanzi": "插",
+      "audio": "cha1.mp3",
+      "curated": true,
+      "defaultReading": "chā",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chá",
+      "hanzi": "茶",
+      "audio": "cha2.mp3",
+      "curated": true,
+      "defaultReading": "chá",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chāi",
+      "hanzi": "拆",
+      "audio": "chai1.mp3",
+      "curated": true,
+      "defaultReading": "chāi",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chái",
+      "hanzi": "柴",
+      "audio": "chai2.mp3",
+      "curated": true,
+      "defaultReading": "chái",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chài",
+      "hanzi": "虿",
+      "audio": "chai4.mp3",
+      "curated": true,
+      "defaultReading": "chài",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chān",
+      "hanzi": "搀",
+      "audio": "chan1.mp3",
+      "curated": true,
+      "defaultReading": "chān",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chán",
+      "hanzi": "蝉",
+      "audio": "chan2.mp3",
+      "curated": true,
+      "defaultReading": "chán",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chǎn",
+      "hanzi": "铲",
+      "audio": "chan3.mp3",
+      "curated": true,
+      "defaultReading": "chǎn",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chàn",
+      "hanzi": "忏",
+      "audio": "chan4.mp3",
+      "curated": true,
+      "defaultReading": "chàn",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chāng",
+      "hanzi": "昌",
+      "audio": "chang1.mp3",
+      "curated": true,
+      "defaultReading": "chāng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "cháng",
+      "hanzi": "肠",
+      "audio": "chang2.mp3",
+      "curated": true,
+      "defaultReading": "cháng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chǎng",
+      "hanzi": "厂",
+      "audio": "chang3.mp3",
+      "curated": true,
+      "defaultReading": "chǎng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chàng",
+      "hanzi": "唱",
+      "audio": "chang4.mp3",
+      "curated": true,
+      "defaultReading": "chàng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chāo",
+      "hanzi": "超",
+      "audio": "chao1.mp3",
+      "curated": true,
+      "defaultReading": "chāo",
+      "needsContext": false
+    },
+    {
+      "pinyin": "cháo",
+      "hanzi": "潮",
+      "audio": "chao2.mp3",
+      "curated": true,
+      "defaultReading": "cháo",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chǎo",
+      "hanzi": "炒",
+      "audio": "chao3.mp3",
+      "curated": true,
+      "defaultReading": "chǎo",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chào",
+      "hanzi": "耖",
+      "audio": "chao4.mp3",
+      "curated": true,
+      "defaultReading": "chào",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chē",
+      "hanzi": "车",
+      "audio": "che1.mp3",
+      "curated": true,
+      "defaultReading": "chē",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chě",
+      "hanzi": "扯",
+      "audio": "che3.mp3",
+      "curated": true,
+      "defaultReading": "chě",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chēn",
+      "hanzi": "嗔",
+      "audio": "chen1.mp3",
+      "curated": true,
+      "defaultReading": "chēn",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chén",
+      "hanzi": "晨",
+      "audio": "chen2.mp3",
+      "curated": true,
+      "defaultReading": "chén",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chěn",
+      "hanzi": "碜",
+      "audio": "chen3.mp3",
+      "curated": true,
+      "defaultReading": "chěn",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chèn",
+      "hanzi": "衬",
+      "audio": "chen4.mp3",
+      "curated": true,
+      "defaultReading": "chèn",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chēng",
+      "hanzi": "撑",
+      "audio": "cheng1.mp3",
+      "curated": true,
+      "defaultReading": "chēng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chéng",
+      "hanzi": "城",
+      "audio": "cheng2.mp3",
+      "curated": true,
+      "defaultReading": "chéng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chěng",
+      "hanzi": "逞",
+      "audio": "cheng3.mp3",
+      "curated": true,
+      "defaultReading": "chěng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chèng",
+      "hanzi": "秤",
+      "audio": "cheng4.mp3",
+      "curated": true,
+      "defaultReading": "chèng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chǐ",
+      "hanzi": "齿",
+      "audio": "chi3.mp3",
+      "curated": true,
+      "defaultReading": "chǐ",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chì",
+      "hanzi": "翅",
+      "audio": "chi4.mp3",
+      "curated": true,
+      "defaultReading": "chì",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chōng",
+      "hanzi": "冲",
+      "audio": "chong1.mp3",
+      "curated": true,
+      "defaultReading": "chōng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chóng",
+      "hanzi": "虫",
+      "audio": "chong2.mp3",
+      "curated": true,
+      "defaultReading": "chóng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chǒng",
+      "hanzi": "宠",
+      "audio": "chong3.mp3",
+      "curated": true,
+      "defaultReading": "chǒng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chòng",
+      "hanzi": "铳",
+      "audio": "chong4.mp3",
+      "curated": true,
+      "defaultReading": "chòng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chōu",
+      "hanzi": "抽",
+      "audio": "chou1.mp3",
+      "curated": true,
+      "defaultReading": "chōu",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chóu",
+      "hanzi": "愁",
+      "audio": "chou2.mp3",
+      "curated": true,
+      "defaultReading": "chóu",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chǒu",
+      "hanzi": "丑",
+      "audio": "chou3.mp3",
+      "curated": true,
+      "defaultReading": "chǒu",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chòu",
+      "hanzi": "臭",
+      "audio": "chou4.mp3",
+      "curated": true,
+      "defaultReading": "chòu",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chū",
+      "hanzi": "出",
+      "audio": "chu1.mp3",
+      "curated": true,
+      "defaultReading": "chū",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chǔ",
+      "hanzi": "储",
+      "audio": "chu3.mp3",
+      "curated": true,
+      "defaultReading": "chǔ",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chù",
+      "hanzi": "触",
+      "audio": "chu4.mp3",
+      "curated": true,
+      "defaultReading": "chù",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuāi",
+      "hanzi": "搋",
+      "audio": "chuai1.mp3",
+      "curated": true,
+      "defaultReading": "chuāi",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuǎi",
+      "hanzi": "揣",
+      "audio": "chuai3.mp3",
+      "curated": true,
+      "defaultReading": "chuāi",
+      "needsContext": true
+    },
+    {
+      "pinyin": "chuài",
+      "hanzi": "踹",
+      "audio": "chuai4.mp3",
+      "curated": true,
+      "defaultReading": "chuài",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuān",
+      "hanzi": "穿",
+      "audio": "chuan1.mp3",
+      "curated": true,
+      "defaultReading": "chuān",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuán",
+      "hanzi": "船",
+      "audio": "chuan2.mp3",
+      "curated": true,
+      "defaultReading": "chuán",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuǎn",
+      "hanzi": "喘",
+      "audio": "chuan3.mp3",
+      "curated": true,
+      "defaultReading": "chuǎn",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuàn",
+      "hanzi": "串",
+      "audio": "chuan4.mp3",
+      "curated": true,
+      "defaultReading": "chuàn",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuāng",
+      "hanzi": "窗",
+      "audio": "chuang1.mp3",
+      "curated": true,
+      "defaultReading": "chuāng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuáng",
+      "hanzi": "床",
+      "audio": "chuang2.mp3",
+      "curated": true,
+      "defaultReading": "chuáng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuǎng",
+      "hanzi": "闯",
+      "audio": "chuang3.mp3",
+      "curated": true,
+      "defaultReading": "chuǎng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuàng",
+      "hanzi": "创",
+      "audio": "chuang4.mp3",
+      "curated": true,
+      "defaultReading": "chuàng",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuī",
+      "hanzi": "吹",
+      "audio": "chui1.mp3",
+      "curated": true,
+      "defaultReading": "chuī",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuí",
+      "hanzi": "锤",
+      "audio": "chui2.mp3",
+      "curated": true,
+      "defaultReading": "chuí",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chūn",
+      "hanzi": "春",
+      "audio": "chun1.mp3",
+      "curated": true,
+      "defaultReading": "chūn",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chún",
+      "hanzi": "唇",
+      "audio": "chun2.mp3",
+      "curated": true,
+      "defaultReading": "chún",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chǔn",
+      "hanzi": "蠢",
+      "audio": "chun3.mp3",
+      "curated": true,
+      "defaultReading": "chǔn",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuò",
+      "hanzi": "绰",
+      "audio": "chuo4.mp3",
+      "curated": true,
+      "defaultReading": "chuò",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuā",
+      "hanzi": "欻",
+      "audio": "chua1.mp3",
+      "curated": false,
+      "defaultReading": "chuā",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chuái",
+      "hanzi": "膗",
+      "audio": "chuai2.mp3",
+      "curated": false,
+      "defaultReading": "chuái",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chǎi",
+      "hanzi": "茝",
+      "audio": "chai3.mp3",
+      "curated": false,
+      "defaultReading": "chǎi",
+      "needsContext": false
+    },
+    {
+      "pinyin": "chǎ",
+      "hanzi": "蹅",
+      "audio": "cha3.mp3",
+      "curated": false,
+      "defaultReading": "chǎ",
+      "needsContext": false
+    }
+  ],
+  "originalRecordings": [
+    {
+      "file": "cha1.mp3",
+      "label": "cha1",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "cha2.mp3",
+      "label": "cha2",
+      "durationSeconds": 1.176
+    },
+    {
+      "file": "cha3.mp3",
+      "label": "cha3",
+      "durationSeconds": 1.224
+    },
+    {
+      "file": "cha4.mp3",
+      "label": "cha4",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chai1.mp3",
+      "label": "chai1",
+      "durationSeconds": 1.128
+    },
+    {
+      "file": "chai2.mp3",
+      "label": "chai2",
+      "durationSeconds": 1.176
+    },
+    {
+      "file": "chai3.mp3",
+      "label": "chai3",
+      "durationSeconds": 0.936
+    },
+    {
+      "file": "chai4.mp3",
+      "label": "chai4",
+      "durationSeconds": 0.936
+    },
+    {
+      "file": "chan1.mp3",
+      "label": "chan1",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chan2.mp3",
+      "label": "chan2",
+      "durationSeconds": 1.176
+    },
+    {
+      "file": "chan3.mp3",
+      "label": "chan3",
+      "durationSeconds": 1.296
+    },
+    {
+      "file": "chan4.mp3",
+      "label": "chan4",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chang1.mp3",
+      "label": "chang1",
+      "durationSeconds": 1.128
+    },
+    {
+      "file": "chang2.mp3",
+      "label": "chang2",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "chang3.mp3",
+      "label": "chang3",
+      "durationSeconds": 1.344
+    },
+    {
+      "file": "chang4.mp3",
+      "label": "chang4",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "chao1.mp3",
+      "label": "chao1",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chao2.mp3",
+      "label": "chao2",
+      "durationSeconds": 1.176
+    },
+    {
+      "file": "chao3.mp3",
+      "label": "chao3",
+      "durationSeconds": 1.296
+    },
+    {
+      "file": "chao4.mp3",
+      "label": "chao4",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "che1.mp3",
+      "label": "che1",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "che3.mp3",
+      "label": "che3",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "che4.mp3",
+      "label": "che4",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chen1.mp3",
+      "label": "chen1",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chen2.mp3",
+      "label": "chen2",
+      "durationSeconds": 1.128
+    },
+    {
+      "file": "chen3.mp3",
+      "label": "chen3",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "chen4.mp3",
+      "label": "chen4",
+      "durationSeconds": 0.984
+    },
+    {
+      "file": "cheng1.mp3",
+      "label": "cheng1",
+      "durationSeconds": 0.936
+    },
+    {
+      "file": "cheng2.mp3",
+      "label": "cheng2",
+      "durationSeconds": 1.128
+    },
+    {
+      "file": "cheng3.mp3",
+      "label": "cheng3",
+      "durationSeconds": 1.224
+    },
+    {
+      "file": "cheng4.mp3",
+      "label": "cheng4",
+      "durationSeconds": 1.128
+    },
+    {
+      "file": "chi1.mp3",
+      "label": "chi1",
+      "durationSeconds": 0.984
+    },
+    {
+      "file": "chi2.mp3",
+      "label": "chi2",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chi3.mp3",
+      "label": "chi3",
+      "durationSeconds": 1.296
+    },
+    {
+      "file": "chi4.mp3",
+      "label": "chi4",
+      "durationSeconds": 0.936
+    },
+    {
+      "file": "chong1.mp3",
+      "label": "chong1",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "chong2.mp3",
+      "label": "chong2",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "chong3.mp3",
+      "label": "chong3",
+      "durationSeconds": 1.176
+    },
+    {
+      "file": "chong4.mp3",
+      "label": "chong4",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chou1.mp3",
+      "label": "chou1",
+      "durationSeconds": 0.936
+    },
+    {
+      "file": "chou2.mp3",
+      "label": "chou2",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chou3.mp3",
+      "label": "chou3",
+      "durationSeconds": 1.224
+    },
+    {
+      "file": "chou4.mp3",
+      "label": "chou4",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "chu1.mp3",
+      "label": "chu1",
+      "durationSeconds": 0.888
+    },
+    {
+      "file": "chu2.mp3",
+      "label": "chu2",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chu3.mp3",
+      "label": "chu3",
+      "durationSeconds": 1.296
+    },
+    {
+      "file": "chu4.mp3",
+      "label": "chu4",
+      "durationSeconds": 1.128
+    },
+    {
+      "file": "chua1.mp3",
+      "label": "chua1",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chuai1.mp3",
+      "label": "chuai1",
+      "durationSeconds": 0.888
+    },
+    {
+      "file": "chuai2.mp3",
+      "label": "chuai2",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "chuai3.mp3",
+      "label": "chuai3",
+      "durationSeconds": 1.128
+    },
+    {
+      "file": "chuai4.mp3",
+      "label": "chuai4",
+      "durationSeconds": 0.984
+    },
+    {
+      "file": "chuan1.mp3",
+      "label": "chuan1",
+      "durationSeconds": 0.936
+    },
+    {
+      "file": "chuan2.mp3",
+      "label": "chuan2",
+      "durationSeconds": 0.936
+    },
+    {
+      "file": "chuan3.mp3",
+      "label": "chuan3",
+      "durationSeconds": 1.224
+    },
+    {
+      "file": "chuan4.mp3",
+      "label": "chuan4",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "chuang1.mp3",
+      "label": "chuang1",
+      "durationSeconds": 0.936
+    },
+    {
+      "file": "chuang2.mp3",
+      "label": "chuang2",
+      "durationSeconds": 1.08
+    },
+    {
+      "file": "chuang3.mp3",
+      "label": "chuang3",
+      "durationSeconds": 1.224
+    },
+    {
+      "file": "chuang4.mp3",
+      "label": "chuang4",
+      "durationSeconds": 0.984
+    },
+    {
+      "file": "chui1.mp3",
+      "label": "chui1",
+      "durationSeconds": 0.888
+    },
+    {
+      "file": "chui2.mp3",
+      "label": "chui2",
+      "durationSeconds": 1.032
+    },
+    {
+      "file": "chun1.mp3",
+      "label": "chun1",
+      "durationSeconds": 1.128
+    },
+    {
+      "file": "chun2.mp3",
+      "label": "chun2",
+      "durationSeconds": 1.176
+    },
+    {
+      "file": "chun3.mp3",
+      "label": "chun3",
+      "durationSeconds": 1.224
+    },
+    {
+      "file": "chuo1.mp3",
+      "label": "chuo1",
+      "durationSeconds": 0.936
+    },
+    {
+      "file": "chuo4.mp3",
+      "label": "chuo4",
+      "durationSeconds": 1.08
+    }
+  ],
+  "lesson": [
+    {
+      "pinyin": "chè",
+      "hanzi": "撤"
+    },
+    {
+      "pinyin": "chà",
+      "hanzi": "岔"
+    },
+    {
+      "pinyin": "chú",
+      "hanzi": "除"
+    },
+    {
+      "pinyin": "chuō",
+      "hanzi": "戳"
+    },
+    {
+      "pinyin": "chī",
+      "hanzi": "吃"
+    },
+    {
+      "pinyin": "chí",
+      "hanzi": "迟"
+    },
+    {
+      "pinyin": "rè chá",
+      "hanzi": "热茶"
+    },
+    {
+      "pinyin": "shā chē",
+      "hanzi": "刹车"
+    },
+    {
+      "pinyin": "chū qù",
+      "hanzi": "出去"
+    },
+    {
+      "pinyin": "chuō pò",
+      "hanzi": "戳破"
+    },
+    {
+      "pinyin": "rì chū",
+      "hanzi": "日出"
+    },
+    {
+      "pinyin": "chū zū chē",
+      "hanzi": "出租车"
+    }
+  ]
+}
