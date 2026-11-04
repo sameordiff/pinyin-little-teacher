@@ -23,3 +23,9 @@ test('isolates simultaneous users keys and does not leak upstream responses',asy
  const output=await Promise.all(keys.map(apiKey=>handleRecognition(new Request('https://private.example/api/recognize',{method:'POST',headers:{'Content-Type':'application/json','oai-authenticated-user-id':apiKey.slice(-8)},body:JSON.stringify({image:jpeg,apiKey})}),{DEEPSEEK_API_KEY:'sk-host-must-not-be-used'},async(url,options)=>{calls.push(options.headers.Authorization);await new Promise(resolve=>setTimeout(resolve,5));return Response.json({choices:[{message:{content:JSON.stringify({items:[{pinyin:'chī',hanzi:'吃'}]})}}]});})));
  assert.deepEqual(calls.sort(),keys.map(k=>'Bearer '+k).sort());for(const r of output){assert.equal(r.status,200);const body=await r.text();for(const key of keys)assert(!body.includes(key));}
 });
+test('preserves standalone finals without inferred hanzi, tones or spelling rewrites',()=>{
+ const r=normalizeRecognition({items:[{kind:'final',pinyin:'a ai ang üe',hanzi:'啊'},{kind:'final',pinyin:'ü3',hanzi:'雨'},{kind:'final',pinyin:'u4'},{pinyin:'ài',hanzi:'爱',source:'image',original_text:'爱'}]});
+ assert.deepEqual(r.items.map(i=>i.pinyin),['a','ai','ang','üe','ǚ','ù','ài']);
+ for(const item of r.items.slice(0,6)){assert.equal(item.kind,'final');assert.equal(item.hanzi,'');assert.equal(item.uncertain,false);}
+ assert.equal(r.items.at(-1).hanzi,'爱');assert.equal(r.items.at(-1).kind,undefined);
+});

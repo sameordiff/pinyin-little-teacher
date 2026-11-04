@@ -25,6 +25,7 @@
 上传老师发来的作业图片，或拍下纸质作业，使用 DeepSeek 识别其中的拼音、汉字和词语。
 
 - 有拼音：识别音节与声调，整理成练习。
+- 有独立韵母：保留 a、ai、ang、üe 等原写法，生成不配汉字的韵母卡片，点击直接听。未标声调按一声示范，带调韵母按原声调读。
 - 有汉字：补充拼音，方便点读和识字。
 - 只有拼音：可以配上相应的示例字词，帮助孩子把声音与文字联系起来。
 - 内容模糊或读音有疑点：提示家长核对后再开始练习。
@@ -162,3 +163,7 @@ node scripts/dev-standalone.mjs
 ## GitHub Pages 发布
 
 访问 **https://sameordiff.github.io/pinyin-little-teacher/**。静态文件由 `scripts/build-pages.mjs` 生成，发布在 `gh-pages` 分支；仓库 Pages 设置使用该分支的根目录。修改 `main` 后需重新生成并推送发布分支。网站文件中不包含用户密钥。
+
+### 独立韵母练习
+
+支持 24 个常见韵母的识别和录入，不强行配字；当前 23 个有四声真人录音，来源为 audio-cmn。`ong` 仍可识别和保存，但暂缺独立示范录音，点击会明确提示参考老师示范，不用 `yong` 冒充。支持 `ü`、`ǖǘǚǜ`，以及 `v`、`u:` 的输入写法。同一行的 `a ai ang üe` 会拆成独立卡片。音频来源与校验记录见 [finals-sources.json](public/audio/finals-sources.json)。
