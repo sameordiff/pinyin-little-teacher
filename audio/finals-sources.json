@@ -1,0 +1,560 @@
+{
+  "source": "audio-cmn",
+  "speaker": "Chen Wang 王琛",
+  "license": "CC BY-SA (upstream)",
+  "method": "Original recordings, no cuts. Zero-initial spelling aliases used for i/u/ü etc. No separate ong recording available; never substitute yong.",
+  "recordings": [
+    {
+      "key": "a1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-a1.mp3",
+      "git_blob_sha": "825b6c2c4cb99d021a92074933d07bf620d3dd36",
+      "duration": 0.984
+    },
+    {
+      "key": "a2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-a2.mp3",
+      "git_blob_sha": "f3b10576c819994c54ef8aacd4d76fbcb15e1716",
+      "duration": 0.984
+    },
+    {
+      "key": "a3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-a3.mp3",
+      "git_blob_sha": "54ea19b906d4fec61f07af963c8b1de26ad0e8ce",
+      "duration": 1.176
+    },
+    {
+      "key": "a4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-a4.mp3",
+      "git_blob_sha": "dcdfeb5d41499e852f20ec0f89e67014a4c32a82",
+      "duration": 0.936
+    },
+    {
+      "key": "o1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-o1.mp3",
+      "git_blob_sha": "066ab71b95e03ef55ca6c50c36785a8535c01913",
+      "duration": 0.888
+    },
+    {
+      "key": "o2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-o2.mp3",
+      "git_blob_sha": "86796acc83475b9f8c840137e095887ccc69b5d1",
+      "duration": 0.936
+    },
+    {
+      "key": "o3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-o3.mp3",
+      "git_blob_sha": "2168d92b85f928f2816753bf8b58ff9c2650eb22",
+      "duration": 1.392
+    },
+    {
+      "key": "o4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-o4.mp3",
+      "git_blob_sha": "05396837f81cbc3562a37f10f96b4b4bbfa7acaf",
+      "duration": 0.888
+    },
+    {
+      "key": "e1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-e1.mp3",
+      "git_blob_sha": "cb79dbde83dd568524b23a1638a1a6f27f57f2f2",
+      "duration": 0.888
+    },
+    {
+      "key": "e2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-e2.mp3",
+      "git_blob_sha": "e4df940b23ab1a2d581389e1cb16a3b126d56039",
+      "duration": 0.984
+    },
+    {
+      "key": "e3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-e3.mp3",
+      "git_blob_sha": "65ac53d1e3a89b96adad381c889e8e43ba923ef7",
+      "duration": 1.176
+    },
+    {
+      "key": "e4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-e4.mp3",
+      "git_blob_sha": "97131fbdefda906cac6f3de2c6597684583a9701",
+      "duration": 0.936
+    },
+    {
+      "key": "yi1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yi1.mp3",
+      "git_blob_sha": "27abd2fa158a8fe30b55583d8b8d9408bfbe6eb0",
+      "duration": 1.032
+    },
+    {
+      "key": "yi2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yi2.mp3",
+      "git_blob_sha": "28cc6e0f1794d9eccc117b0bd51218a651d14155",
+      "duration": 1.08
+    },
+    {
+      "key": "yi3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yi3.mp3",
+      "git_blob_sha": "fdc450f078e56e93492ed7384ce176623939b7d4",
+      "duration": 1.296
+    },
+    {
+      "key": "yi4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yi4.mp3",
+      "git_blob_sha": "81c1ba1cf7e8c355a9c36787016e3733d3e824ba",
+      "duration": 0.984
+    },
+    {
+      "key": "wu1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wu1.mp3",
+      "git_blob_sha": "cdb470b9ab13bb45970ea4a36feff79926b64a4c",
+      "duration": 1.032
+    },
+    {
+      "key": "wu2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wu2.mp3",
+      "git_blob_sha": "4d95962c04cf8f9b455889c1455c32c7ca6335de",
+      "duration": 0.936
+    },
+    {
+      "key": "wu3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wu3.mp3",
+      "git_blob_sha": "cdb167fea95877c88c119f05a82f5aa3f004bf92",
+      "duration": 1.44
+    },
+    {
+      "key": "wu4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wu4.mp3",
+      "git_blob_sha": "1d46097eb989d240cd5a43e7984a7a5b121715bf",
+      "duration": 1.032
+    },
+    {
+      "key": "yu1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yu1.mp3",
+      "git_blob_sha": "8742ed5400e81493c4a743a3e2570b881a4f104a",
+      "duration": 0.936
+    },
+    {
+      "key": "yu2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yu2.mp3",
+      "git_blob_sha": "b7431814b3b101dd2f53d209a06e8bcdf8acfc86",
+      "duration": 0.936
+    },
+    {
+      "key": "yu3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yu3.mp3",
+      "git_blob_sha": "80e2c4aa20579428105f14f2778386b72fb08035",
+      "duration": 1.176
+    },
+    {
+      "key": "yu4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yu4.mp3",
+      "git_blob_sha": "6dc564a9c430cde9abda0644d3ddb940444490a8",
+      "duration": 1.032
+    },
+    {
+      "key": "ai1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ai1.mp3",
+      "git_blob_sha": "0df2643a0d654b20286712298ef60db48656ce24",
+      "duration": 0.984
+    },
+    {
+      "key": "ai2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ai2.mp3",
+      "git_blob_sha": "6c2c55cd302456cdf594381361f821c5b1fc7cbd",
+      "duration": 0.984
+    },
+    {
+      "key": "ai3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ai3.mp3",
+      "git_blob_sha": "409a42ba555a4d6ee93e1703c49dd4368a16bf36",
+      "duration": 1.128
+    },
+    {
+      "key": "ai4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ai4.mp3",
+      "git_blob_sha": "4b0fcf5c5422d6d5861ee1247224642f34e69fc1",
+      "duration": 0.888
+    },
+    {
+      "key": "ei1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ei1.mp3",
+      "git_blob_sha": "8a6a80f152092b984706ad794bcebf003a02f14c",
+      "duration": 0.984
+    },
+    {
+      "key": "ei2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ei2.mp3",
+      "git_blob_sha": "9d9cf1b9f3a633350b569b12d97e753101cb9ad8",
+      "duration": 0.984
+    },
+    {
+      "key": "ei3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ei3.mp3",
+      "git_blob_sha": "815bc7ead650c1f771d1dd22cab55c0e02ab239d",
+      "duration": 1.08
+    },
+    {
+      "key": "ei4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ei4.mp3",
+      "git_blob_sha": "924964b748d56be865b0c7a03b7554ff660459ce",
+      "duration": 0.984
+    },
+    {
+      "key": "wei1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wei1.mp3",
+      "git_blob_sha": "c5c48cc3f42b27cb21814dc93dfa20a35cda5baf",
+      "duration": 1.08
+    },
+    {
+      "key": "wei2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wei2.mp3",
+      "git_blob_sha": "80fdd4f8157c6b757a55e470ccb97e727a77e407",
+      "duration": 1.176
+    },
+    {
+      "key": "wei3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wei3.mp3",
+      "git_blob_sha": "422e9d3e710f0d2546443d14a97335a2d6972260",
+      "duration": 1.344
+    },
+    {
+      "key": "wei4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wei4.mp3",
+      "git_blob_sha": "20b798b4b99141ee3b1da876f0dc2b75a7b5fb53",
+      "duration": 0.984
+    },
+    {
+      "key": "ao1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ao1.mp3",
+      "git_blob_sha": "ec517c0c209d18481b79c73e768233037afc4aa3",
+      "duration": 0.936
+    },
+    {
+      "key": "ao2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ao2.mp3",
+      "git_blob_sha": "06f807cc6288e2189bf90684d78297edf9aa9c12",
+      "duration": 0.936
+    },
+    {
+      "key": "ao3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ao3.mp3",
+      "git_blob_sha": "17c82b1f88086b7609107eed12ceee16237d0e5b",
+      "duration": 1.224
+    },
+    {
+      "key": "ao4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ao4.mp3",
+      "git_blob_sha": "858c9f94db413ae6bfad84dec6af14575274d83c",
+      "duration": 0.936
+    },
+    {
+      "key": "ou1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ou1.mp3",
+      "git_blob_sha": "3bbe14e0a2c6764b5e8fbd568508b5f3dd70eab2",
+      "duration": 0.984
+    },
+    {
+      "key": "ou2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ou2.mp3",
+      "git_blob_sha": "cd33e85c5ac27bcdf6f64a01674dc607543e9cef",
+      "duration": 0.984
+    },
+    {
+      "key": "ou3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ou3.mp3",
+      "git_blob_sha": "054f9d4dc3817bd87ea73d9118515920f17a34ac",
+      "duration": 1.296
+    },
+    {
+      "key": "ou4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ou4.mp3",
+      "git_blob_sha": "9eb4812380aeb82cd081b80d9a871929bcb49340",
+      "duration": 0.984
+    },
+    {
+      "key": "you1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-you1.mp3",
+      "git_blob_sha": "0e418dff5fe003e19cfd852e8462e52c321289e2",
+      "duration": 1.08
+    },
+    {
+      "key": "you2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-you2.mp3",
+      "git_blob_sha": "9fd7e07155b7ee8aa7801d0b1d991d729ecc46e2",
+      "duration": 1.08
+    },
+    {
+      "key": "you3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-you3.mp3",
+      "git_blob_sha": "ce23fc8f19b977999aef11a01d69923ba4ac503c",
+      "duration": 1.392
+    },
+    {
+      "key": "you4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-you4.mp3",
+      "git_blob_sha": "ed6251b44435dd15aaed8291561ef46cff1828bb",
+      "duration": 1.032
+    },
+    {
+      "key": "ye1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ye1.mp3",
+      "git_blob_sha": "cc1a998432cc366a2a93c0264cb82c0cc9749dc0",
+      "duration": 1.08
+    },
+    {
+      "key": "ye2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ye2.mp3",
+      "git_blob_sha": "db1febc33965be1274ec82bb1f8e14d9d095832c",
+      "duration": 1.08
+    },
+    {
+      "key": "ye3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ye3.mp3",
+      "git_blob_sha": "a07d342263f7278595fe5e16d0d1dd69b86f56b8",
+      "duration": 1.224
+    },
+    {
+      "key": "ye4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ye4.mp3",
+      "git_blob_sha": "c7e33b636813a8d44601666eab1f69e241b5c0a3",
+      "duration": 0.984
+    },
+    {
+      "key": "yue1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yue1.mp3",
+      "git_blob_sha": "05e27e3d010228c09988dccfa275fae97256f666",
+      "duration": 0.936
+    },
+    {
+      "key": "yue2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yue2.mp3",
+      "git_blob_sha": "8527961d9c0c5ad38b3d36344d6692a91398a3d5",
+      "duration": 1.08
+    },
+    {
+      "key": "yue3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yue3.mp3",
+      "git_blob_sha": "89faf8923188459cf8992a32d35a1a4f949c1cfc",
+      "duration": 1.344
+    },
+    {
+      "key": "yue4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yue4.mp3",
+      "git_blob_sha": "e916078f7b27836f81b350beb5b992485acc1aa3",
+      "duration": 0.984
+    },
+    {
+      "key": "er1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-er1.mp3",
+      "git_blob_sha": "6621372584d96c143d8b8c044935df34bef916ef",
+      "duration": 0.984
+    },
+    {
+      "key": "er2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-er2.mp3",
+      "git_blob_sha": "a4ca5b6895f0eb1c9b87c9cf133e86ab36c32df9",
+      "duration": 1.08
+    },
+    {
+      "key": "er3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-er3.mp3",
+      "git_blob_sha": "09f7dbcc2388b87ac4107aca54fc18554eabc75c",
+      "duration": 1.176
+    },
+    {
+      "key": "er4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-er4.mp3",
+      "git_blob_sha": "f7d8571876d49bcb2ccdf0828d0dc0944d4dbb76",
+      "duration": 0.888
+    },
+    {
+      "key": "an1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-an1.mp3",
+      "git_blob_sha": "4e5dd73d1ad8994129325bda20b0f02e00641722",
+      "duration": 1.032
+    },
+    {
+      "key": "an2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-an2.mp3",
+      "git_blob_sha": "d0c98fdf3d3f613dacd0ad04f269c5b0f90664db",
+      "duration": 1.032
+    },
+    {
+      "key": "an3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-an3.mp3",
+      "git_blob_sha": "08c72f470c016e8bc6ed7e29520e9b9d1a7d81a0",
+      "duration": 1.296
+    },
+    {
+      "key": "an4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-an4.mp3",
+      "git_blob_sha": "ecb63765a3ecd08f9f25840297a50066131ec4bc",
+      "duration": 0.936
+    },
+    {
+      "key": "en1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-en1.mp3",
+      "git_blob_sha": "be29e10f832220f8b8e130bb136c19ea9f7e077f",
+      "duration": 1.032
+    },
+    {
+      "key": "en2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-en2.mp3",
+      "git_blob_sha": "d1b99aa8b245aaad271cacca8ad052b48f52991a",
+      "duration": 1.032
+    },
+    {
+      "key": "en3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-en3.mp3",
+      "git_blob_sha": "98b05bb28be355d4ca4fe8027ff2525f48783d16",
+      "duration": 1.128
+    },
+    {
+      "key": "en4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-en4.mp3",
+      "git_blob_sha": "4e8576d8a23b71b7c1ec9d22d1fa6c7522730b9d",
+      "duration": 0.936
+    },
+    {
+      "key": "yin1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yin1.mp3",
+      "git_blob_sha": "d6c94b682edec3cb63f3a5543aab731843651b64",
+      "duration": 1.032
+    },
+    {
+      "key": "yin2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yin2.mp3",
+      "git_blob_sha": "5f79af2c79decb004f0be438f59fcd094aaf2f54",
+      "duration": 1.128
+    },
+    {
+      "key": "yin3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yin3.mp3",
+      "git_blob_sha": "7f9ea39e316dd84dec6f8e86b245c4cc62e636d0",
+      "duration": 1.344
+    },
+    {
+      "key": "yin4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yin4.mp3",
+      "git_blob_sha": "ae6e51c7cf2223cae57d02c6b58b3a2d5bd3ea8a",
+      "duration": 1.032
+    },
+    {
+      "key": "wen1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wen1.mp3",
+      "git_blob_sha": "b6e7bac1b965faaed5beb83ca536b70889e9d766",
+      "duration": 1.176
+    },
+    {
+      "key": "wen2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wen2.mp3",
+      "git_blob_sha": "e243fa27ba799773dbf51ac21c7298d403c991f5",
+      "duration": 1.176
+    },
+    {
+      "key": "wen3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wen3.mp3",
+      "git_blob_sha": "632693724e1d25f5e8892edb763cec70aa1a5494",
+      "duration": 1.392
+    },
+    {
+      "key": "wen4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-wen4.mp3",
+      "git_blob_sha": "7e0a1c7e070eb44051bafad4ecb6eae5a498c388",
+      "duration": 0.984
+    },
+    {
+      "key": "yun1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yun1.mp3",
+      "git_blob_sha": "a4486f09f302b3cd6b9ccaf8be344231efd1d46a",
+      "duration": 1.032
+    },
+    {
+      "key": "yun2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yun2.mp3",
+      "git_blob_sha": "2bb38c76598d33fc94b1f67c673b86ab5f1223da",
+      "duration": 1.176
+    },
+    {
+      "key": "yun3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yun3.mp3",
+      "git_blob_sha": "24b227f97fec44cc8a6c6e519395da4187e8129d",
+      "duration": 1.176
+    },
+    {
+      "key": "yun4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-yun4.mp3",
+      "git_blob_sha": "67e21e40047568785b0ab51a521952dcc18dcc94",
+      "duration": 1.032
+    },
+    {
+      "key": "ang1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ang1.mp3",
+      "git_blob_sha": "7496d5630dade49158efdc328a2a8ba64d1cdc74",
+      "duration": 0.984
+    },
+    {
+      "key": "ang2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ang2.mp3",
+      "git_blob_sha": "33fdce98192f5430b893eb68be34f21197685418",
+      "duration": 1.032
+    },
+    {
+      "key": "ang3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ang3.mp3",
+      "git_blob_sha": "108dff04db93c4814999908886e3727d23759d1d",
+      "duration": 1.296
+    },
+    {
+      "key": "ang4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ang4.mp3",
+      "git_blob_sha": "5471d86a2654a3915715de86d5f8122df66f4172",
+      "duration": 0.936
+    },
+    {
+      "key": "eng1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-eng1.mp3",
+      "git_blob_sha": "0789cb92930fcfe6699bf6aecab24e77e844be85",
+      "duration": 1.08
+    },
+    {
+      "key": "eng2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-eng2.mp3",
+      "git_blob_sha": "e21e77d4461a8924108f9eda33852e3b0ea4f529",
+      "duration": 1.032
+    },
+    {
+      "key": "eng3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-eng3.mp3",
+      "git_blob_sha": "155e56e558ca69756f14e7ff5b5b978843830646",
+      "duration": 1.128
+    },
+    {
+      "key": "eng4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-eng4.mp3",
+      "git_blob_sha": "c539b592213860ee4f347104bd4917d97c164e1a",
+      "duration": 0.936
+    },
+    {
+      "key": "ying1",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ying1.mp3",
+      "git_blob_sha": "5c47ab72e1b83d7b22666ed825859ddc5c2ff4f5",
+      "duration": 1.176
+    },
+    {
+      "key": "ying2",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ying2.mp3",
+      "git_blob_sha": "36d8abc9927ae1f2b9eccc9349ae7fc79835a991",
+      "duration": 1.176
+    },
+    {
+      "key": "ying3",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ying3.mp3",
+      "git_blob_sha": "7bf3d020082dd76b0a23e2cd82a13869ba1c7c43",
+      "duration": 1.224
+    },
+    {
+      "key": "ying4",
+      "source": "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs/cmn-ying4.mp3",
+      "git_blob_sha": "54259a650d8878691d159d9b70db1e3914c10b5f",
+      "duration": 0.984
+    }
+  ]
+}
