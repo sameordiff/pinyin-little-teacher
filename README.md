@@ -166,4 +166,4 @@ node scripts/dev-standalone.mjs
 
 ### 独立韵母练习
 
-支持 24 个常见韵母的识别和录入，不强行配字；当前 23 个有四声真人录音，来源为 audio-cmn。`ong` 仍可识别和保存，但暂缺独立示范录音，点击会明确提示参考老师示范，不用 `yong` 冒充。支持 `ü`、`ǖǘǚǜ`，以及 `v`、`u:` 的输入写法。同一行的 `a ai ang üe` 会拆成独立卡片。音频来源与校验记录见 [finals-sources.json](public/audio/finals-sources.json)。
+支持 24 个常见韵母的识别和录入，不强行配字；当前 23 个有四声真人录音，来源为 audio-cmn。无调号 `ong` 已接入 One-To-One Chinese Lessons 韵母教学页的在线原站示范，需联网，不随源码分发音频；带调 `ōng、óng、ǒng、òng` 仍暂缺独立四声录音，会明确提示，不以 `yong` 替代。支持 `ü`、`ǖǘǚǜ`，以及 `v`、`u:` 的输入写法。同一行的 `a ai ang üe` 会拆成独立卡片。音频来源与校验记录见 [finals-sources.json](public/audio/finals-sources.json)。

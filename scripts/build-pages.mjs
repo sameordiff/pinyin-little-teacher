@@ -10,7 +10,7 @@ core=core.replace("import { pinyin, polyphonic } from 'pinyin-pro';","const {pin
 const client=`(()=>{\n${core}\nwindow.PinyinPagesRecognition=async(images,key)=>recognizeImage(images,{DEEPSEEK_API_KEY:key,DEEPSEEK_MODEL:'deepseek-flash'});\n})();\n`;
 await writeFile(resolve(output,'pages-recognition.js'),client);
 let html=await readFile(resolve(output,'index.html'),'utf8');
-html=html.replace('<script src="app.js?', '<script src="pages-recognition.js?v=20261104-finals" defer></script><script src="app.js?');
+html=html.replace('<script src="app.js?', '<script src="pages-recognition.js?v=20261105-ong" defer></script><script src="app.js?');
 
 html=html.replaceAll('识别时仅经本站后端临时转发给 DeepSeek，不写入本站数据库或应用日志。','GitHub Pages 版由浏览器直接连接 DeepSeek，密钥不经过本站后端。');
 html=html.replaceAll('识别时经过本站后端临时调用 DeepSeek，不写入本站数据库或应用日志。','GitHub Pages 版由浏览器直接调用 DeepSeek，密钥不经过本站后端。');

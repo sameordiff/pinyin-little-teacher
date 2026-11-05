@@ -2,7 +2,7 @@
   "source": "audio-cmn",
   "speaker": "Chen Wang 王琛",
   "license": "CC BY-SA (upstream)",
-  "method": "Original recordings, no cuts. Zero-initial spelling aliases used for i/u/ü etc. No separate ong recording available; never substitute yong.",
+  "method": "Original audio-cmn recordings, no cuts; zero-initial spelling aliases for i/u/ü etc. Ong is not present in that local bank; see additional_reference. Never substitute yong.",
   "recordings": [
     {
       "key": "a1",
@@ -556,5 +556,13 @@
       "git_blob_sha": "54259a650d8878691d159d9b70db1e3914c10b5f",
       "duration": 0.984
     }
-  ]
+  ],
+  "additional_reference": {
+    "pinyin": "ong",
+    "use": "Unmarked standalone final only; not a four-tone recording",
+    "source_page": "https://www.121chineselessons.com/resources/pinyin/finals/",
+    "audio_url": "https://www.121chineselessons.com/wp-content/uploads/2011/12/ong.mp3",
+    "delivery": "Stream directly from provider; audio not bundled or redistributed in repository",
+    "rights": "Copyright remains with original provider"
+  }
 }
